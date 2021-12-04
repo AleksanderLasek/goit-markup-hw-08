@@ -1,0 +1,50 @@
+.filters__btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 162%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background: #f5f4fa;
+    border-width: 0;
+    border-radius: 4px;
+    height: 38px;
+    transition-property: color, background, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: #ffffff;
+      background: $themeColor;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      width: 572px;
+      height: 54px;
+    }
+
+    &-all {
+      width: 121px;
+    }
+
+    &-pages {
+      width: 93px;
+    }
+
+    &-app {
+      width: 114px;
+    }
+
+    &-design {
+      width: 91px;
+    }
+
+    &-marketing {
+      width: 121px;
+    }
+  }

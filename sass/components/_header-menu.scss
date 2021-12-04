@@ -1,0 +1,115 @@
+.header-menu {
+  height: 80px;
+  border-bottom: 1px solid #ececec;
+
+  &__width {
+    height: 100%;
+    width: 1170px;
+  }
+
+  &__nav {
+    width: 625px;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    padding: 0px;
+    width: 254px;
+  }
+
+  &__agency {
+    width: 53px;
+
+    &--current::after {
+      width: 53px;
+      left: 0px;
+    }
+  }
+
+  &__portfolio {
+    width: 58px;
+
+    &--current::after {
+      width: 58px;
+      left: 99px;
+    }
+  }
+
+  &__contact {
+    width: 51px;
+  }
+
+  &__agency--current::after,
+  &__portfolio--current::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 4px;
+    top: 45.5px;
+    background: $themeColor;
+    border-radius: 2px;
+  }
+
+  &__reach {
+    display: flex;
+    justify-content: space-between;
+    width: 312px;
+
+    & a:hover svg {
+      fill: $themeColor;
+    }
+  }
+
+  &__nav-list a,
+  &__reach a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36%;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+
+  &__nav-list a:visited,
+  &__reach a:visited {
+    color: inherit;
+  }
+
+  &__nav-list li a:hover,
+  &__nav-list li a:focus &__reach a:hover,
+  &__reach a:focus {
+    color: $themeColor;
+  }
+
+  &__nav-list li a,
+  &__reach a {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__mail {
+    display: flex;
+    width: 161px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tel {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__mail svg,
+  &__tel svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #757575;
+  }
+}
