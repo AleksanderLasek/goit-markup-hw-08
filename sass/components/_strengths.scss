@@ -48,6 +48,26 @@
 }
 
 @media screen and (min-width: 768px) {
+  .strengths {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    &__element {
+      width: 354px;
+    }
+    &__description {
+      width: 354px;
+      height: 75px;
+    }
+
+    &__icon {
+      width: 354px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

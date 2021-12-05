@@ -239,6 +239,19 @@ img {
   fill: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .clients__list {
+    max-width: 738px;
+    height: 214px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients__container {
     flex-direction: column;
@@ -1691,6 +1704,25 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .strengths__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .strengths__element {
+    width: 354px;
+  }
+  .strengths__description {
+    width: 354px;
+    height: 75px;
+  }
+  .strengths__icon {
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .strengths__title {
     font-weight: bold;
@@ -1824,6 +1856,34 @@ img {
 
 .team__social-icon {
   fill: #afb1b8;
+}
+
+@media screen and (min-width: 768px) {
+  .team__title {
+    margin-top: 60px;
+  }
+  .team__container {
+    height: 1315px;
+    width: 768px;
+    justify-content: flex-start;
+    background: #f5f4fa;
+  }
+  .team__card {
+    width: 354px;
+    height: 536px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 30px;
+  }
+  .team__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+    height: 2608px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
