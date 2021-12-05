@@ -695,19 +695,7 @@ img {
   height: 100%;
 }
 
-.header-menu__nav-list {
-  visibility: hidden;
-}
-
-.header-menu__agency {
-  visibility: hidden;
-}
-
-.header-menu__portfolio {
-  visibility: hidden;
-}
-
-.header-menu__reach {
+.header-menu__nav-list, .header-menu__agency, .header-menu__portfolio, .header-menu__reach {
   visibility: hidden;
 }
 
@@ -736,11 +724,124 @@ img {
   fill: #2196F3;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-menu {
     height: 80px;
-    border-bottom: 1px solid #ececec;
   }
+  .header-menu__width {
+    justify-content: space-between;
+  }
+  .header-menu__nav-list {
+    visibility: visible;
+    width: 282px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    padding: 0px;
+  }
+  .header-menu__hamburger {
+    display: none;
+  }
+  .header-menu__agency, .header-menu__portfolio, .header-menu__contact, .header-menu__mail, .header-menu__tel {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-menu__mail:hover svg,
+  .header-menu__tel:hover svg {
+    fill: #2196F3;
+  }
+  .header-menu__agency:hover, .header-menu__portfolio:hover, .header-menu__contact:hover, .header-menu__mail:hover, .header-menu__tel:hover {
+    color: #2196F3;
+  }
+  .header-menu__reach {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    height: 38px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .header-menu__mail {
+    width: 138px;
+    height: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu__mail svg {
+    width: 14px;
+    height: 10px;
+  }
+  .header-menu__tel {
+    width: 113px;
+    height: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-menu__tel svg {
+    width: 10px;
+    height: 14px;
+  }
+  .header-menu__mail svg,
+  .header-menu__tel svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #757575;
+  }
+  .header-menu__agency {
+    visibility: visible;
+  }
+  .header-menu__agency--current {
+    color: #2196F3;
+  }
+  .header-menu__agency--current::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 4px;
+    top: 29.5px;
+    background: #2196F3;
+    border-radius: 2px;
+    left: 0px;
+  }
+  .header-menu__portfolio {
+    visibility: visible;
+  }
+  .header-menu__portfolio--current {
+    color: #2196F3;
+  }
+  .header-menu__portfolio--current::after {
+    content: '';
+    display: block;
+    position: relative;
+    height: 4px;
+    top: 29.5px;
+    background: #2196F3;
+    border-radius: 2px;
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .header-menu__width {
     height: 100%;
   }
