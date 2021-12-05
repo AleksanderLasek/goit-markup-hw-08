@@ -49,6 +49,15 @@
     color: $themeColor;
   }
 
+  &__tab-element a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__tab-element a:visited {
+    color: inherit;
+  }
+
   &__reach {
     height: 100px;
     margin-left: 40px;

@@ -97,6 +97,15 @@ img {
   color: #2196F3;
 }
 
+.menu__tab-element a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu__tab-element a:visited {
+  color: inherit;
+}
+
 .menu__reach {
   height: 100px;
   margin-left: 40px;
