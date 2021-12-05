@@ -55,7 +55,7 @@
       justify-content: space-between;
       align-content: center;
       position: relative;
-      padding: 0px;
+      padding: 0;
     }
 
     &__hamburger {
@@ -191,44 +191,6 @@
     &__nav-list {
       width: 254px;
       margin-left: 93px;
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      position: relative;
-      padding: 0px;
-    }
-
-    &__hamburger {
-      display: none;
-    }
-
-    &__agency,
-    &__portfolio,
-    &__contact,
-    &__mail,
-    &__tel {
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      color: #212121;
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__mail:hover svg,
-    &__tel:hover svg {
-      fill: $themeColor;
-    }
-
-    &__agency:hover,
-    &__portfolio:hover,
-    &__contact:hover,
-    &__mail:hover,
-    &__tel:hover {
-      color: $themeColor;
     }
 
     &__reach {
@@ -237,7 +199,6 @@
       flex-wrap: nowrap;
       width: 321px;
       height: 16px;
-      justify-content: space-between;
     }
 
     &__mail {
@@ -261,52 +222,6 @@
       & svg {
         width: 10px;
         height: 16px;
-      }
-    }
-
-    &__mail svg,
-    &__tel svg {
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      fill: #757575;
-    }
-
-    &__agency {
-      visibility: visible;
-
-      &--current {
-        color: $themeColor;
-      }
-
-      &--current::after {
-        content: '';
-        display: block;
-        position: relative;
-        height: 4px;
-        top: 29.5px;
-        background: $themeColor;
-        border-radius: 2px;
-        left: 0px;
-      }
-    }
-
-    &__portfolio {
-      visibility: visible;
-
-      &--current {
-        color: $themeColor;
-      }
-
-      &--current::after {
-        content: '';
-        display: block;
-        position: relative;
-        height: 4px;
-        top: 29.5px;
-        background: $themeColor;
-        border-radius: 2px;
-        left: 0px;
       }
     }
   }

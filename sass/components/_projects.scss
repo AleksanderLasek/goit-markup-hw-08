@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     width: 450px;
-
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -48,7 +47,6 @@
     transform: translate(0, 100%);
     transition: transform 0.2s linear;
     background-color: $themeColor;
-
     height: 100%;
     font-size: 18px;
     line-height: 156%;
@@ -91,22 +89,12 @@
   .projects {
     &__element {
       width: 354px;
-      height: 404px;
     }
 
     &__list {
-      justify-content: space-between;
-      align-items: center;
       width: 738px;
-
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 40px;
-      padding: 0px;
-      align-content: space-between;
     }
     &__img {
-      height: 294px;
       width: 354px;
     }
     &__title {
@@ -118,88 +106,33 @@
 @media screen and (min-width: 1200px) {
   .projects {
     &__list {
-      justify-content: space-between;
-      align-items: center;
       width: 1170px;
       height: 1272px;
-      display: flex;
-      flex-wrap: wrap;
       margin-top: 34px;
-      padding: 0px;
-      align-content: space-between;
     }
 
     &__element {
       width: 370px;
-      height: 404px;
-      background: #ffffff;
-      border: 1px solid #eeeeee;
-      transition-property: box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover,
-      &:focus {
-        cursor: pointer;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-          0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-      }
-    }
-
-    &__element:hover &__info,
-    &__element:focus &__info {
-      transform: translate(0, 0);
     }
 
     &__img {
       width: 370px;
-      height: 294px;
-      overflow: hidden;
-      position: relative;
     }
 
     &__info {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(0, 100%);
-      transition: transform 0.2s linear;
-      background-color: $themeColor;
       width: 100%;
-      height: 100%;
-      font-size: 18px;
-      line-height: 156%;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-      display: flex;
-      padding: 49px 45px 49px 24px;
     }
 
     &__title {
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 200%;
-      letter-spacing: 0.06em;
       margin-top: 20px;
-      margin-bottom: 4px;
       width: 322px;
-      height: 36px;
     }
 
     &__description {
       width: 322px;
-      height: 30px;
-      margin-bottom: 20px;
     }
 
     &__caption {
-      font-size: 16px;
-      line-height: 187%;
-      letter-spacing: 0.03em;
-      color: #212121;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
       align-items: center;
     }
   }

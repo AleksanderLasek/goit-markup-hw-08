@@ -11,6 +11,18 @@
       rgba(0, 0, 0, 1) 100%
     ),
     url('../images/efektywne.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4) 100%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(../images/efektywne@2x.jpg);
+  }
+
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,11 +76,6 @@
 
     &__text {
       font-size: 44px;
-      line-height: 136%;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin-bottom: 30px;
       height: 120px;
       width: 696px;
     }
