@@ -5,22 +5,45 @@
 ul,
 ol {
   list-style-type: none;
+  padding-left: 0;
 }
 
 img {
-  vertical-align: middle;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
+  width: 480px;
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

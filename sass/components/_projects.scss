@@ -2,7 +2,7 @@
   &__list {
     justify-content: space-between;
     align-items: center;
-    width: 1170px;
+
     height: 1272px;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
   }
 
   &__element {
-    width: 370px;
+
     height: 404px;
     background: #ffffff;
     border: 1px solid #eeeeee;
@@ -34,7 +34,7 @@
   }
 
   &__img {
-    width: 370px;
+
     height: 294px;
     overflow: hidden;
     position: relative;
@@ -47,7 +47,7 @@
     transform: translate(0, 100%);
     transition: transform 0.2s linear;
     background-color: $themeColor;
-    width: 100%;
+
     height: 100%;
     font-size: 18px;
     line-height: 156%;
@@ -64,12 +64,12 @@
     letter-spacing: 0.06em;
     margin-top: 20px;
     margin-bottom: 4px;
-    width: 322px;
+
     height: 36px;
   }
 
   &__description {
-    width: 322px;
+
     height: 30px;
     margin-bottom: 20px;
   }

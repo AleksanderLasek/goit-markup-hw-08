@@ -59,10 +59,21 @@
               +48 111 111 111</a
             >
           </span>
+          <span class="header-menu__hamburger">
+            <button
+              type="button"
+              class="header-menu__hamburger-btn"
+              data-menu-open
+            >
+              <svg width="24" height="16">
+                <use href="images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </span>
         </div>
       </section>
       <section class="header-service section">
-        <h1 class="header-service__text">
+        <h1 class="container header-service__text">
           EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
         </h1>
         <button type="button" class="header-service__button" data-modal-open>
@@ -74,9 +85,9 @@
       <section class="strengths section">
         <div class="container">
           <ul class="strengths__list">
-            <li>
+            <li class="strengths__element">
               <div class="strengths__icon">
-                <svg width="63.32" height="70">
+                <svg width="65.32" height="70">
                   <use href="images/icons.svg#icon-satelita"></use>
                 </svg>
               </div>
@@ -86,7 +97,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="strengths__element">
               <div class="strengths__icon">
                 <svg width="66.96" height="70">
                   <use href="images/icons.svg#icon-zegar"></use>
@@ -98,7 +109,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="strengths__element">
               <div class="strengths__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-laptop"></use>
@@ -110,7 +121,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="strengths__element">
               <div class="strengths__icon">
                 <svg width="70" height="70">
                   <use href="images/icons.svg#icon-astronauta"></use>
@@ -310,7 +321,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container clients__container">
           <h2 class="clients__title">Nasi klienci</h2>
           <ul class="clients__list">
@@ -358,9 +369,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <section class="footer">
         <div class="container footer__container">
           <div class="footer__left">
@@ -433,7 +444,42 @@
           </div>
         </div>
       </section>
-    </footer>
+    </footer> -->
+
+    <div class="is-hidden" data-menu>
+      <div class="menu">
+        <button type="button" class="menu__close-btn" data-menu-close>
+          <svg width="18.67" height="18.67">
+            <use href="images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="menu__tabs">
+          <li class="menu__agency">Agencja</li>
+          <li class="menu__portfolio">Portfolio</li>
+          <li class="menu__contact"></li>
+        </ul>
+        <span class="menu__reach">
+          <a href="tel:+48111111111" class="menu__tel"> +48 111 111 111</a>
+          <a href="mailto:info@devstudio.com" class="menu__mail">
+            info@devstudio.com</a
+          >
+        </span>
+        <ul class="menu__social">
+          <li>
+            <a href="" class="menu__instagram">Instagram</a>
+          </li>
+          <li>
+            <a href="" class="menu__twitter">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="menu__facebook">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="menu__linkedin">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -446,21 +492,42 @@
         <form class="modal__form">
           <div class="modal__inputs-group">
             <label class="modal__label" for="firstname">Imie</label>
-            <input class="modal__input modal__firstname" id="firstname" name="firstname" type="text" />
+            <input
+              class="modal__input modal__firstname"
+              id="firstname"
+              name="firstname"
+              type="text"
+            />
             <svg class="modal__person-icon" width="12" height="12">
               <use href="images/icons.svg#icon-osoba"></use>
             </svg>
-            <label class="modal__label modal__label-tel" for="tel">Telefon</label>
-            <input class="modal__input modal__tel" id="tel" name="tel" type="tel" />
+            <label class="modal__label modal__label-tel" for="tel"
+              >Telefon</label
+            >
+            <input
+              class="modal__input modal__tel"
+              id="tel"
+              name="tel"
+              type="tel"
+            />
             <svg class="modal__tel-icon" width="13" height="13">
               <use href="images/icons.svg#icon-tel2"></use>
             </svg>
-            <label class="modal__label modal__label-email" for="email">Email</label>
-            <input class="modal__input modal__email" id="email" name="email" type="email" />
+            <label class="modal__label modal__label-email" for="email"
+              >Email</label
+            >
+            <input
+              class="modal__input modal__email"
+              id="email"
+              name="email"
+              type="email"
+            />
             <svg class="modal__email-icon" width="15" height="12">
               <use href="images/icons.svg#icon-koperta2"></use>
             </svg>
-            <label class="modal__label modal__label-comment" for="comment">Komentarz</label>
+            <label class="modal__label modal__label-comment" for="comment"
+              >Komentarz</label
+            >
             <textarea
               class="modal__textarea"
               id="comment"
@@ -469,12 +536,18 @@
             ></textarea>
           </div>
           <div class="modal__statement">
-            <input class="modal__statement-input" id="check" name="check" type="checkbox" />
+            <input
+              class="modal__statement-input"
+              id="check"
+              name="check"
+              type="checkbox"
+            />
             <svg class="modal__check-icon" width="14" height="14">
               <use href="images/icons.svg#icon-ptaszek"></use>
             </svg>
             <label>
-              Oświadczam iż akceptuję <a href="" class="modal__terms"> Regulamin</a> i
+              Oświadczam iż akceptuję
+              <a href="" class="modal__terms"> Regulamin</a> i
               <a href="" class="modal__terms">Politykę Prywatności.</a>
             </label>
           </div>
@@ -486,5 +559,6 @@
     </div>
 
     <script src="modal.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

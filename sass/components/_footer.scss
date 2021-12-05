@@ -7,7 +7,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 1170px;
   }
 
   &__paragraph {
@@ -67,12 +66,10 @@
       margin-top: 9px;
       margin-bottom: 9px;
       height: 21px;
-      width: 231px;
+
     }
 
-    &-firstline {
-      width: 246px;
-    }
+
   }
 
   &__right {
@@ -86,14 +83,14 @@
 
   &__icons {
     display: flex;
-    width: 206px;
+
     align-items: center;
     justify-content: space-between;
   }
 
   &__icon-link {
     display: flex;
-    width: 44px;
+
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -119,7 +116,7 @@
 
   &__input {
     color: #fff;
-    width: 358px;
+
     height: 50px;
     padding-left: 16px;
     padding-top: 15px;
@@ -148,7 +145,7 @@
       border: #2f303a;
       color: #fff;
       cursor: pointer;
-      width: 200px;
+
       height: 50px;
       display: flex;
       align-items: center;
@@ -169,7 +166,7 @@
 
   &__form {
     display: flex;
-    width: 570px;
+
     justify-content: space-between;
   }
 
