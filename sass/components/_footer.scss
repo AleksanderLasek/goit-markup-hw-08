@@ -209,43 +209,28 @@
 
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
     height: 252px;
     width: 100%;
-    background: #2f303a;
 
     &__container {
-      display: flex;
       align-items: flex-start;
-      justify-content: flex-start;
       flex-wrap: nowrap;
     }
 
     &__paragraph {
       margin-bottom: 11px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: #ffffff;
 
       &-logo {
         margin-bottom: 11px;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.03em;
-        color: #ffffff;
       }
     }
 
     &__left {
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      margin-right: 0px;
-      margin-top: 60px;
+      margin-right: 0;
       margin-left: 0;
     }
 
@@ -253,41 +238,14 @@
       width: 246px;
       height: 81px;
       text-align: left;
-      background-color: #2f303a;
-      font-style: normal;
-      font-size: 14px;
-      line-height: 171%;
-      letter-spacing: 0.03em;
-      color: #ffffff;
-      padding: 0;
-
-      &-link {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.6);
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      }
-
-      &-link:hover,
-      &-link:focus {
-        color: $themeColor;
-      }
-
-      &-link:visited {
-        color: inherit;
-      }
 
       &-line {
         margin-top: 9px;
         margin-bottom: 9px;
-        height: 21px;
       }
     }
 
     &__right {
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
       margin-top: 72px;
@@ -295,100 +253,27 @@
       margin-left: 70px;
     }
 
-    &__icons {
-      display: flex;
-
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    &__icon-link {
-      display: flex;
-
-      height: 44px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:hover {
-        background-color: $themeColor;
-      }
-    }
-
     &__newsletter {
-      display: flex;
-      flex-direction: column;
       align-items: flex-start;
-      justify-content: flex-start;
       margin-top: 72px;
       margin-left: 78px;
     }
 
     &__input {
-      color: #fff;
       width: 358px;
-      height: 50px;
-      padding-left: 16px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-right: 16px;
-      background-color: #2f303a;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      box-sizing: border-box;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-      transition-property: border-color, outline;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-      &:focus-visible {
-        outline: none;
-        border-color: $themeColor;
-      }
     }
 
     &__btn {
       &-submit {
-        background: $themeColor;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        border: #2f303a;
-        color: #fff;
-        cursor: pointer;
         margin-top: 9px;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        outline: none;
-      }
-
-      &-text {
-        margin-left: 42px;
-        margin-right: 24px;
-      }
-
-      &-icon {
-        top: 32px;
-        left: 15px;
       }
     }
 
     &__form {
-      display: flex;
       width: 570px;
       flex-direction: row;
       height: 50px;
       justify-content: space-between;
-    }
-
-    &__social-icon {
-      fill: #ffffff;
     }
   }
 }
