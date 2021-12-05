@@ -29,12 +29,14 @@
           <nav class="header-menu__nav">
             <ul class="header-menu__nav-list">
               <li>
-                <a href="index.html" class="header-menu__agency">Agencja</a>
-              </li>
-              <li>
                 <a
                   href=""
-                  class="header-menu__portfolio header-menu__portfolio--current"
+                  class="header-menu__agency header-menu__agency--current"
+                  >Agencja</a
+                >
+              </li>
+              <li>
+                <a href="portfolio.html" class="header-menu__portfolio"
                   >Portfolio</a
                 >
               </li>
@@ -56,6 +58,17 @@
               </svg>
               +48 111 111 111</a
             >
+          </span>
+          <span class="header-menu__hamburger">
+            <button
+              type="button"
+              class="header-menu__hamburger-btn"
+              data-menu-open
+            >
+              <svg width="24" height="16">
+                <use href="images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
           </span>
         </div>
       </section>
@@ -379,5 +392,46 @@
         </div>
       </section>
     </footer>
+
+    <div class="backdrop is-hidden" data-menu>
+      <div class="menu">
+        <button type="button" class="menu__close-btn" data-menu-close>
+          <svg width="18.67" height="18.67">
+            <use href="images/icons.svg#icon-x"></use>
+          </svg>
+        </button>
+        <ul class="menu__tabs">
+          <li class="menu__tab-element">
+            <a href="index.html">Agencja</a>
+          </li>
+          <li class="menu__tab-element menu__tab-element--current">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__tab-element">Kontakt</li>
+        </ul>
+        <span class="menu__reach">
+          <a href="tel:+48111111111" class="menu__tel"> +48 111 111 111</a>
+          <a href="mailto:info@devstudio.com" class="menu__mail">
+            info@devstudio.com</a
+          >
+        </span>
+        <ul class="menu__social">
+          <li>
+            <a href="" class="menu__social-link">Instagram</a>
+          </li>
+          <li>
+            <a href="" class="menu__social-link">Twitter</a>
+          </li>
+          <li>
+            <a href="" class="menu__social-link">Facebook</a>
+          </li>
+          <li>
+            <a href="" class="menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="menu.js"></script>
   </body>
 </html>
