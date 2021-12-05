@@ -919,7 +919,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -929,6 +930,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
   height: 30px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -939,22 +941,31 @@ img {
   justify-content: center;
 }
 
+.modal__close-btn:hover svg,
+.modal__close-btn:focus svg {
+  fill: #2196F3;
+}
+
 .modal__title {
   position: absolute;
+  width: 370px;
+  height: 60px;
   left: 40px;
   top: 40px;
-  height: 23px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 150%;
   text-align: center;
   letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .modal__form {
   position: absolute;
   left: 40px;
-  top: 75px;
+  top: 112px;
 }
 
 .modal__submit-btn {
@@ -962,10 +973,11 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: #fff;
+  width: 200px;
   height: 50px;
   position: absolute;
-  top: 416px;
-  left: 124px;
+  top: 403px;
+  left: 84px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -994,6 +1006,7 @@ img {
 
 .modal__inputs-group {
   height: 342px;
+  width: 370px;
   position: relative;
 }
 
@@ -1003,6 +1016,7 @@ img {
 
 .modal__input, .modal__textarea {
   position: absolute;
+  width: 370px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -1093,13 +1107,14 @@ img {
 .modal__statement {
   position: absolute;
   height: 24px;
+  width: 370px;
   top: 362px;
   left: 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 14px;
-  line-height: 171%;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -1122,6 +1137,191 @@ img {
 
 .modal__terms {
   color: #2196F3;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 581px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .modal__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal__title {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    height: 23px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .modal__form {
+    position: absolute;
+    left: 40px;
+    top: 75px;
+  }
+  .modal__submit-btn {
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: #fff;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 416px;
+    left: 124px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    outline: none;
+  }
+  .modal__submit-btn-text {
+    height: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+  }
+  .modal__label {
+    position: absolute;
+    left: 0px;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+  .modal__inputs-group {
+    height: 342px;
+    width: 370px;
+    position: relative;
+  }
+  .modal__inputs-group svg {
+    position: absolute;
+  }
+  .modal__input, .modal__textarea {
+    position: absolute;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border-color, outline;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__input:focus-visible, .modal__textarea:focus-visible {
+    outline: none;
+    border-color: #2196F3;
+  }
+  .modal__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 32px;
+    height: 40px;
+  }
+  .modal__input + svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal__input:focus-visible + svg {
+    fill: #2196F3;
+  }
+  .modal__textarea {
+    resize: none;
+    top: 222px;
+    height: 120px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .modal__textarea::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .modal__firstname {
+    top: 18px;
+  }
+  .modal__tel {
+    top: 86px;
+  }
+  .modal__email {
+    top: 154px;
+  }
+  .modal__label-tel {
+    top: 68px;
+  }
+  .modal__label-email {
+    top: 136px;
+  }
+  .modal__label-comment {
+    top: 204px;
+  }
+  .modal__person-icon {
+    top: 32px;
+    left: 15px;
+  }
+  .modal__tel-icon {
+    top: 99.26px;
+    left: 14.27px;
+  }
+  .modal__email-icon {
+    top: 168px;
+    left: 13.5px;
+  }
+  .modal__statement {
+    position: absolute;
+    height: 24px;
+    top: 362px;
+    left: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  .modal__statement-input {
+    margin-right: 8px;
+    height: 15px;
+  }
+  .modal__statement-input:checked + svg {
+    visibility: visible;
+  }
+  .modal__check-icon {
+    left: 1px;
+    position: absolute;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .modal__terms {
+    color: #2196F3;
+  }
 }
 
 .projects__list {
