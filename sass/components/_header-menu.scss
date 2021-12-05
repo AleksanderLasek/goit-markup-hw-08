@@ -185,10 +185,12 @@
 @media screen and (min-width: 1200px) {
   .header-menu {
     &__width {
-      height: 100%;
+      justify-content: flex-start;
     }
 
     &__nav-list {
+      width: 254px;
+      margin-left: 93px;
       display: flex;
       justify-content: space-between;
       align-content: center;
@@ -196,77 +198,70 @@
       padding: 0px;
     }
 
-    &__agency {
-      &--current::after {
-        left: 0px;
-      }
+    &__hamburger {
+      display: none;
     }
 
-    &__portfolio {
-      &--current::after {
-        left: 99px;
-      }
-    }
-
-    &__agency--current::after,
-    &__portfolio--current::after {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      height: 4px;
-      top: 45.5px;
-      background: $themeColor;
-      border-radius: 2px;
-    }
-
-    &__reach {
-      display: flex;
-      justify-content: space-between;
-
-      & a:hover svg {
-        fill: $themeColor;
-      }
-    }
-
-    &__nav-list a,
-    &__reach a {
+    &__agency,
+    &__portfolio,
+    &__contact,
+    &__mail,
+    &__tel {
       text-decoration: none;
       font-weight: 500;
       font-size: 14px;
-      line-height: 36%;
+      line-height: 16px;
       letter-spacing: 0.02em;
       color: #212121;
-    }
-
-    &__nav-list a:visited,
-    &__reach a:visited {
-      color: inherit;
-    }
-
-    &__nav-list li a:hover,
-    &__nav-list li a:focus &__reach a:hover,
-    &__reach a:focus {
-      color: $themeColor;
-    }
-
-    &__nav-list li a,
-    &__reach a {
       transition-property: color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__mail {
-      display: flex;
+    &__mail:hover svg,
+    &__tel:hover svg {
+      fill: $themeColor;
+    }
 
+    &__agency:hover,
+    &__portfolio:hover,
+    &__contact:hover,
+    &__mail:hover,
+    &__tel:hover {
+      color: $themeColor;
+    }
+
+    &__reach {
+      margin-left: 345px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 321px;
+      height: 16px;
       justify-content: space-between;
-      align-items: center;
+    }
+
+    &__mail {
+      width: 161px;
+      height: 16px;
+      font-size: 14px;
+      line-height: 16px;
+
+      & svg {
+        width: 16px;
+        height: 12px;
+      }
     }
 
     &__tel {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      width: 130px;
+      height: 16px;
+      font-size: 14px;
+      line-height: 16px;
+
+      & svg {
+        width: 10px;
+        height: 16px;
+      }
     }
 
     &__mail svg,
@@ -275,6 +270,44 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       fill: #757575;
+    }
+
+    &__agency {
+      visibility: visible;
+
+      &--current {
+        color: $themeColor;
+      }
+
+      &--current::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 4px;
+        top: 29.5px;
+        background: $themeColor;
+        border-radius: 2px;
+        left: 0px;
+      }
+    }
+
+    &__portfolio {
+      visibility: visible;
+
+      &--current {
+        color: $themeColor;
+      }
+
+      &--current::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 4px;
+        top: 29.5px;
+        background: $themeColor;
+        border-radius: 2px;
+        left: 0px;
+      }
     }
   }
 }

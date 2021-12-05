@@ -45,5 +45,9 @@ img {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &__filters {
+      margin-top: 0;
+    }
   }
 }

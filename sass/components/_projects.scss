@@ -88,6 +88,31 @@
 }
 
 @media screen and (min-width: 768px) {
+  .projects {
+    &__element {
+      width: 354px;
+      height: 404px;
+    }
+
+    &__list {
+      justify-content: space-between;
+      align-items: center;
+      width: 738px;
+
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      padding: 0px;
+      align-content: space-between;
+    }
+    &__img {
+      height: 294px;
+      width: 354px;
+    }
+    &__title {
+      margin-top: 6px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {

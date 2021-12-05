@@ -57,12 +57,21 @@
 
 @media screen and (min-width: 768px) {
   .filters {
+    height: 38px;
 
-    
+    &__btn-list {
+      width: 768px;
+      height: 38px;
+      flex-wrap: nowrap;
+      margin-left: 50px;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .filters {
+    justify-content: center;
+  }
   .filters__btn {
     font-weight: 500;
     font-size: 16px;
@@ -89,8 +98,25 @@
       display: flex;
       justify-content: space-between;
       padding: 0;
-
+      width: 572px;
       height: 54px;
+    }
+
+    &-all,
+    &-marketing {
+      width: 121px;
+    }
+
+    &-pages {
+      width: 93px;
+    }
+
+    &-app {
+      width: 114px;
+    }
+
+    &-design {
+      width: 91px;
     }
   }
 }
